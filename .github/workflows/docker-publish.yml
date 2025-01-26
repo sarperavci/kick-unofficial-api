@@ -24,4 +24,5 @@ jobs:
         with:
           image_name: sarperavci/kick-unofficial-api
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          docker_io_token: ${{ secrets.DOCKER_IO_TOKEN }}
           dockerfile: ./Dockerfile
