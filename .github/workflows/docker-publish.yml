@@ -25,4 +25,3 @@ jobs:
           image_name: sarperavci/kick-unofficial-api
           github_token: ${{ secrets.GITHUB_TOKEN }}
           dockerfile: ./Dockerfile
-          platforms: linux/amd64,linux/arm64
