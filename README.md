@@ -127,7 +127,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - [CloudflareBypassForScraping](https://github.com/sarperavci/CloudflareBypassForScraping/) for the Cloudflare bypass solution
 - [FastAPI](https://fastapi.tiangolo.com/) for the API framework
-- [curl-cffi](https://github.com/yifeikong/curl-cffi) for HTTP request handling to bypass Cloudflare SSL Fingerprinting
+- [curl-cffi](https://github.com/lexiforest/curl_cffi) for HTTP request handling to bypass Cloudflare SSL Fingerprinting
 - [mitmproxy](https://mitmproxy.org/) for endpoint discovery
 
 ## Disclaimer
