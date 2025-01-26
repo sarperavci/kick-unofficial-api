@@ -91,6 +91,10 @@ For endpoints requiring authentication, include your Kick.com session token in t
 curl -H "Authorization: Bearer your-session-token" http://localhost:5000/api/v2/...
 ```
 
+## Available Endpoints
+
+![](https://github.com/user-attachments/assets/79e41f1b-43a0-465f-8acc-ad521d456491)
+
 ## API Endpoint Discovery
 
 The project includes a mitmproxy script (`misc/endpoint_discovery.py`) for discovering new Kick.com API endpoints:
