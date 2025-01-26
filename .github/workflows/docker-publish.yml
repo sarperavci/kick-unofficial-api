@@ -1,0 +1,28 @@
+name: Build and publish Docker image
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  docker_publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+      
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build and publish Docker image
+        uses: macbre/push-to-ghcr@master
+        with:
+          image_name: sarperavci/kick-unofficial-api
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          dockerfile: ./Dockerfile
+          platforms: linux/amd64,linux/arm64

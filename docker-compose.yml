@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  cloudflare-bypass:
+    image: ghcr.io/sarperavci/cloudflarebypassforscraping:latest
+    ports:
+      - "8000:8000"
+
+  kick-api:
+    image: ghcr.io/sarperavci/kick-unofficial-api:latest
+    environment:
+      - BYPASS_SERVER_URL=http://cloudflare-bypass
+      - BYPASS_SERVER_PORT=8000
+      - TARGET_URL=https://kick.com
+    ports:
+      - "5000:5000"
+    depends_on:
+      - cloudflare-bypass
