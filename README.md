@@ -2,6 +2,10 @@
 
 An unofficial API wrapper for Kick.com that handles Cloudflare protection automatically. This project provides a FastAPI-based REST API that mirrors Kick.com's API endpoints while managing Cloudflare bypass seamlessly.
 
+## Quick Start
+
+Try it out before you deploy it: https://kickapi.hackmap.win/docs
+
 ## Features
 
 - 🛡️ Automatic Cloudflare protection bypass
